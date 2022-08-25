@@ -74,13 +74,13 @@ $ pip3 install boto3 --user
  chmod +x DynamicInventory.py
 #Add default Region so that DynamicInventory will fetch host details from that Region.
 # temporally
- export AWS_DEFAULT_REGION=us-west-2
+ export AWS_DEFAULT_REGION=us-east-2
 # Or Permanently
 #Create config file in current user .aws folder And below content.
  mkdir ~/.aws
  vi ~/.aws/config
 [default]
-region=us-west-2
+region=us-east-2
 
 $ ./DynamicInventory.py --list
 ```
@@ -89,8 +89,8 @@ $ ./DynamicInventory.py --list
 </span>
 
 ```sh
- vi key.pem
- chmod 400 key.pem
+ vi automation.pem
+ chmod 400 automation.pem
 ```
 - ###### <span style="color:orange">Replace \<Pemfile> with your pemfile path in server
 </span>
