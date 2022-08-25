@@ -96,7 +96,7 @@ $ ./DynamicInventory.py --list
 </span>
 
 ```sh
- ansible-playbook -i DynamicInventory.py site.yml -u ubuntu --private-key=<PemFilePath>  --ssh-common-args='-o StrictHostKeyChecking=no'
+ ansible-playbook -i DynamicInventory.py import-playbooks-site.yml -u ubuntu --private-key=<PemFilePath>  --ssh-common-args='-o StrictHostKeyChecking=no'
 ```
 ##  Destroy Infrastructure  
 ```sh
